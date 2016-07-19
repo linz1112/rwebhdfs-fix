@@ -23,9 +23,9 @@ More exmaples will arrive in the function help pages but for now, here's a brief
 #### Environment
 I'm recommend HDP 2.0 for quick demo and testing: http://hortonworks.com/hdp/downloads/
 
-#### Create your webhdfs object
+#### Create your webhdfs object(token should be a long string of your delegation token)
 WebHDFS is a S3 object and can be created using 
-```R token should be a long string of your delegation token
+```R 
 hdfs <- webhdfs("localhost", 50070, "hue",token="")
 ```
 
