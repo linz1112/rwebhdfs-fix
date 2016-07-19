@@ -4,6 +4,7 @@ rwebhdfs
 R Package for WebHDFS REST API
 
 ## Overview
+In this package, most code is same with original rwebhdfs package. But I modify the "http" adress to "https" address and change token to delagation token for user to be easier to use.
 This R package provides access to HDFS via WebHDFS REST API. For more information, please see:
 http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/WebHDFS.html
 
@@ -24,8 +25,8 @@ I'm recommend HDP 2.0 for quick demo and testing: http://hortonworks.com/hdp/dow
 
 #### Create your webhdfs object
 WebHDFS is a S3 object and can be created using 
-```R
-hdfs <- webhdfs("localhost", 50070, "hue")
+```R token should be a long string of your delegation token
+hdfs <- webhdfs("localhost", 50070, "hue",token="")
 ```
 
 #### List the files under you home directory
@@ -64,7 +65,7 @@ rwebhdfs is not on CRAN yet. I plan to play with it in a couple Hadoop projects 
 
 To get latest version on Github:
 ```R
-devtools::install_github(c("saurfang/rwebhdfs"))
+devtools::install_github(c("linz1112/rwebhdfs-fixs"))
 ```
 
 ## Implementation
