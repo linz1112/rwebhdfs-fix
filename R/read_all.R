@@ -33,9 +33,9 @@ read_all.default <- function(fs, dirPath, ...){
 #' \href{http://hadoop.apache.org/docs/stable/api/org/apache/hadoop/fs/FileSystem.html}{HDFSFileSystem}
 #' @importFrom RCurl basicHeaderGatherer
 #' @include curl_webhdfs.R
-#read_all.webhdfs <- function(fs, dirPath, ...){
+read_all.webhdfs <- function(fs, dirPath, ...){
 
-  Check path is non empty
+  #Check path is non empty
   if(!nzchar(dirPath))
     stop("Directory Path must be non-empty")
 
