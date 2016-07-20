@@ -4,8 +4,6 @@ read_all <- function(fs, dirPath, ...){
 
 read_all.default <- function(fs, dirPath, ...){
   warning("Unrecognized filesystem, invoking read/writeLines...")
-  if(dir.exists(dirPath))
-    stop("File already exists: ", dirPath)
 
 }
 
