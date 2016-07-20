@@ -20,6 +20,7 @@ Collate:
     'file_checksum.R'
     'file_stat.R'
     'mkdir.R'
+    'read_all.R'
     'read_file.R'
     'rename_file.R'
     'symlink_dir.R'
