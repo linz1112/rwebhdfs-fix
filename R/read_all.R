@@ -24,7 +24,7 @@ read_all.webhdfs <- function(fs, dirPath, ...){
   file_name <- dataset[,1]
   all_file <- ""
 				 
-  if(!identical("/",substr(dirPath,start=nchar(dirPath),stop=nchar(dirPath))){
+  if(!identical("/",substr(dirPath,start=nchar(dirPath),stop=nchar(dirPath)))){
 	path <- paste(dirPath,"/",sep="") 
   } else {
 	path <- dirPath
