@@ -45,15 +45,15 @@ read_all.webhdfs <- function(fs, dirPath, ...){
   all_file <- ""
 
   if(!identical("/",substr(dirPath,start=nchar(dirPath),stop=nchar(dirPath)))){
-	path <- paste(dirPath,"/",sep="")
+	dirpath <- paste(dirPath,"/",sep="")
   } else {
-	path <- dirPath
+	dirpath <- dirPath
   }
   for(name in file_name){
-	path <- paste(path,name,sep="")
-	data <- read_file(hdfs,path)
-	all_file <- paste(all_file,data,sep="")
+	path <- paste(dirpath,name,sep="")
+	dataset <- read_file(hdfs,path)
+	all_file <- paste(all_file,dataset,sep="")
   }
-  return(all_file)
-
+  
+  all_file
 }
