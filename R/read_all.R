@@ -54,6 +54,5 @@ read_all.webhdfs <- function(fs, dirPath, ...){
 	dataset <- read_file(hdfs,path)
 	all_file <- paste(all_file,dataset,sep="")
   }
-  
   all_file
 }
