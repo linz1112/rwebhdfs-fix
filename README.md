@@ -5,6 +5,9 @@ R Package for WebHDFS REST API
 
 ## Overview
 In this package, most code is same with original rwebhdfs package. But I modify the "http" adress to "https" address and change token to delagation token for user to be easier to use.
+
+Additional function added: read_all() to allow users to load whole directory files into variable
+
 This R package provides access to HDFS via WebHDFS REST API. For more information, please see:
 http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/WebHDFS.html
 
@@ -39,7 +42,10 @@ dir_stat(hdfs, "")
 write_file(hdfs, "test")
 file_stat(hdfs, "test")
 ```
-
+#### Reading whole directory files into one single variable
+```R
+data <- read_all(hdfs, "dirPath")
+```
 #### Write local file onto HDFS and see what we just wrote
 ```R
 foo <- tempfile()
