@@ -4,7 +4,7 @@ rwebhdfs
 R Package for WebHDFS REST API
 
 ## Overview
-In this package, most code is same with original rwebhdfs package. But I modify the "http" adress to "https" address and change token to delagation token for user to be easier to use.
+In this package, most code is same with original rwebhdfs package. But I modify the "http" address to "https" address and change token to delagation token for user to be easier to use.
 
 Additional function added: read_all() to allow users to load whole directory files into variable
 
@@ -29,7 +29,7 @@ I'm recommend HDP 2.0 for quick demo and testing: http://hortonworks.com/hdp/dow
 #### Create your webhdfs object(token should be a long string of your delegation token)
 WebHDFS is a S3 object and can be created using 
 ```R 
-hdfs <- webhdfs("localhost", 50070, "hue",token="")
+hdfs <- webhdfs("localhost", 50070, "hue",token="your delegation token")
 ```
 
 #### List the files under you home directory
