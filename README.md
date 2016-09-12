@@ -71,7 +71,7 @@ rwebhdfs is not on CRAN yet. I plan to play with it in a couple Hadoop projects 
 
 To get latest version on Github:
 ```R
-devtools::install_github(c("linz1112/rwebhdfs-fixs"))
+devtools::install_github(c("linz1112/rwebhdfs-fix"))
 ```
 
 ## Implementation
